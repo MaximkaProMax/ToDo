@@ -6,18 +6,24 @@
     <title>To Do List</title>
 
     <link rel="stylesheet" href="\Styles\DesignMain.css">
-    <script src="Scripts\AddTaskJS.js"defer></script>
+    <script src="Scripts\AddTaskJS.js" defer></script>
 </head>
-
 <body>
     <div class="container">
         <h2>To Do Max</h2>
 
         <input type="text" id="taskInput" placeholder="Добавьте новую задачу...">
-        <button onclick="addTask()">Добавить</button>
+        <button id="addButton">Добавить</button>
 
         <ul id="taskList"></ul>
+
+        <div class="buttons-container">
+            <button id="removeAllButton">Удалить все задачи</button>
+        </div>
     </div>
 
+    <script>
+        document.getElementById('removeAllButton').onclick = removeAllTasks;
+    </script>
 </body>
 </html>
