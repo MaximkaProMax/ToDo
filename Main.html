@@ -4,26 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
-
     <link rel="stylesheet" href="\Styles\DesignMain.css">
-    <script src="Scripts\AddTaskJS.js" defer></script>
 </head>
 <body>
     <div class="container">
         <h2>To Do Max</h2>
-
         <input type="text" id="taskInput" placeholder="Добавьте новую задачу...">
         <button id="addButton">Добавить</button>
-
         <ul id="taskList"></ul>
-
         <div class="buttons-container">
             <button id="removeAllButton">Удалить все задачи</button>
         </div>
     </div>
 
-    <script>
-        document.getElementById('removeAllButton').onclick = removeAllTasks;
-    </script>
+    <script type="module" src="Scripts/main.js"></script>
 </body>
 </html>
