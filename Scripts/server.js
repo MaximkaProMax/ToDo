@@ -22,7 +22,6 @@ app.post('/tasks', async (req, res) => {
     res.json(task);
 });
 
-// Новый маршрут для удаления конкретной задачи
 app.delete('/tasks/:id', async (req, res) => {
     const { id } = req.params;
     await Task.destroy({ where: { id } });
